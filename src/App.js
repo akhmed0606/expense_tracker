@@ -5,7 +5,13 @@ function App() {
   return (
     <div>
     <Grid container spacing={0} alignItems='center' justifyContent='center' style={{height: '100vh'}}>
-   <Grid item sm={12} xs={5}>
+   <Grid item xs={12} sm={4}>
+      <Details />
+   </Grid>
+   <Grid item xs={12} sm={4}>
+      Main
+   </Grid>
+   <Grid item xs={12} sm={4}>
       <Details />
    </Grid>
     </Grid>

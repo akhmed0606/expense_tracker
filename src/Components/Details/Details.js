@@ -8,8 +8,8 @@ const Details = () => {
     <Card className={classes.income}>
     <CardHeader title='Income'  />
     <CardContent>
-      <Typography variant="h5"></Typography>
-      <Doughnut  />
+      <Typography variant="h5">$50</Typography>
+      {/* <Doughnut  /> */}
     </CardContent>
   </Card>
   )
