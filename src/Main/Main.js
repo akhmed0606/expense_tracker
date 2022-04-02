@@ -1,4 +1,5 @@
 import { Card, CardHeader,CardContent,Typography,Grid,Divider} from '@material-ui/core'
+import Form from './Form/Form'
 import useStyles from './styles'
 
 const Main = () => {
@@ -11,6 +12,15 @@ const Main = () => {
         <Typography variant='subtitle1'>
           Say something
           </Typography>
+          <Divider />
+          <Form />
+      </CardContent>
+      <CardContent className={classes.cardContent}>
+        <Grid container spacing={2}>
+          <Grid>
+          List will be here
+          </Grid>
+        </Grid>
       </CardContent>
    </Card>
   )

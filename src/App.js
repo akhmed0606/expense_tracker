@@ -1,4 +1,5 @@
 import  Details  from './Components/Details/Details'
+import Main from './Main/Main'
 import { Grid } from '@material-ui/core'
 import useStyles from './style'
 
@@ -10,8 +11,8 @@ function App() {
    <Grid item xs={12} sm={4}>
       <Details title='Income' />
    </Grid>
-   <Grid item xs={12} sm={4}>
-      Main
+   <Grid item xs={12} sm={3}>
+      <Main />
    </Grid>
    <Grid item xs={12} sm={4}>
       <Details title='Expense'/>
