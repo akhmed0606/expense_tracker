@@ -13,23 +13,27 @@ import useStyles from "./styles";
 
 const List = () => {
   const classes = useStyles();
+  const transaction = [{id:1, type: 'Income', category:'Bisiness'}]
   return (
-    <MUList>
-      <Slide direction="down">
-        <ListItem>
-          <ListItemAvatar>
-            <Avatar>
-              <MoneyOff />
-            </Avatar>
-          </ListItemAvatar>
-          <ListItemText primary />
-          <ListItemSecondaryAction>
-            <IconButton edge="end" aria-aria-label="delete">
-              <Delete />
-            </IconButton>
-          </ListItemSecondaryAction>
-        </ListItem>
-      </Slide>
+    <MUList dense={false} className={classes.list}>
+        {transaction.map((transaction) => (
+            <Slide direction="down">
+            <ListItem>
+              <ListItemAvatar>
+                <Avatar className={transaction.type === 'Income' ? classes.avatarIncome : classes.avatarExpense}>
+                  <MoneyOff />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary />
+              <ListItemSecondaryAction>
+                <IconButton edge="end" aria-aria-label="delete">
+                  <Delete />
+                </IconButton>
+              </ListItemSecondaryAction>
+            </ListItem>
+          </Slide>
+        ))}
+      
     </MUList>
   );
 };
