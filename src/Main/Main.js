@@ -1,4 +1,4 @@
-import { Card, CardHeader,CardContent,Typography,Grid,Divider} from '@material-ui/core'
+import { Card, CardHeader,CardContent,Typography,Grid,Divider, List} from '@material-ui/core'
 import Form from './Form/Form'
 import useStyles from './styles'
 
@@ -18,7 +18,7 @@ const Main = () => {
       <CardContent className={classes.cardContent}>
         <Grid container spacing={2}>
           <Grid>
-          List will be here
+          <List />
           </Grid>
         </Grid>
       </CardContent>
