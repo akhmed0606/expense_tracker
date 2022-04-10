@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import {
   List as MUList,
   ListItem,
@@ -9,9 +10,14 @@ import {
   Slide,
 } from "@material-ui/core";
 import { Delete, MoneyOff } from "@material-ui/icons";
+import { ExpenseTrackerContext } from "../../context/context";
 import useStyles from "./styles";
 
 const List = () => {
+  const globalState = useContext(ExpenseTrackerContext)
+
+  console.log(globalState)
+  
   const classes = useStyles();
   const transaction = [{id:1, type: 'Income', category:'Bisiness', amount:50, data: 'Thursday Apr 7'},
   {id:2, type: 'Expense', category:'Bisiness', amount:550, data: 'Thursday Apr 17'},
